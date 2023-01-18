@@ -84,7 +84,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Try Again", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**-NOTE- \nSTEP2: NEW USERS MUST JOIN THE CHANNEL BELOW TO GET YOUR MOVIE \nSTEP1: THEN COME BACK HERE AND TAP ON --TRY AGAIN-- U r movie will come **",
+            text="**-NOTE- \nSTEP 1: NEW USERS MUST JOIN THE CHANNEL BELOW TO GET YOUR MOVIE \nSTEP 2: THEN COME BACK HERE AND TAP ON --TRY AGAIN-- U r movie will come **",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
